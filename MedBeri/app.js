@@ -1,12 +1,12 @@
 var PRODUCTS=[
-{id:'honey-flower',name:'Мёд цветочный',cat:'Мёд',desc:'Мягкий вкус луговых трав и солнечный аромат. Фасовка 500 г.',price:590,img:'https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=900&q=85',tag:'Хит продаж',weight:'500 г'},
-{id:'honey-buckwheat',name:'Мёд гречишный',cat:'Мёд',desc:'Выразительный вкус, насыщенный цвет и характерный аромат. 500 г.',price:640,img:'https://images.unsplash.com/photo-1471943311424-646960669fbc?auto=format&fit=crop&w=900&q=85',tag:'',weight:'500 г'},
-{id:'honey-nuts',name:'Мёд с орехами',cat:'Мёд',desc:'Мёд и отборные орехи — приятное дополнение к чаепитию. 250 г.',price:520,img:'https://images.unsplash.com/photo-1599599810694-b5b37304c041?auto=format&fit=crop&w=900&q=85',tag:'',weight:'250 г'},
-{id:'tea-forest',name:'Чай травяной «Лесной»',cat:'Чай',desc:'Душистый травяной сбор для спокойных вечеров. 50 г.',price:320,img:'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=900&q=85',tag:'Новинка',weight:'50 г'},
-{id:'tea-berry',name:'Чай «Ягодный вечер»',cat:'Чай',desc:'Ягодно-травяная композиция с ярким ароматом. 70 г.',price:390,img:'https://images.unsplash.com/photo-1563911892437-1f059416e0c5?auto=format&fit=crop&w=900&q=85',tag:'',weight:'70 г'},
-{id:'candle-wax',name:'Свеча из вощины',cat:'Свечи',desc:'Свеча из натуральной вощины с медовым ароматом.',price:450,img:'https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=900&q=85',tag:'Ручная работа',weight:'1 шт.'},
-{id:'propolis',name:'Прополис натуральный',cat:'Прополис',desc:'Продукт пчеловодства. Подробности состава и применения уточняйте у продавца.',price:280,img:'https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=900&q=85',tag:'',weight:'10 г'},
-{id:'gift-cozy',name:'Набор «Уют»',cat:'Подарки',desc:'Мёд, чай и свеча в подарочной упаковке.',price:1290,img:'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=900&q=85',tag:'Для подарка',weight:'1 набор'}
+{id:'honey-flower',name:'Мёд цветочный',cat:'Мёд',desc:'Мягкий вкус луговых трав и солнечный аромат. Фасовка 500 г.',price:590,img:'assets/products/honey-flower.jpg',tag:'Хит продаж',weight:'500 г'},
+{id:'honey-buckwheat',name:'Мёд гречишный',cat:'Мёд',desc:'Выразительный вкус, насыщенный цвет и характерный аромат. 500 г.',price:640,img:'assets/products/honey-buckwheat.jpg',tag:'',weight:'500 г'},
+{id:'honey-nuts',name:'Мёд с орехами',cat:'Мёд',desc:'Мёд и отборные орехи — приятное дополнение к чаепитию. 250 г.',price:520,img:'assets/products/honey-nuts.jpg',tag:'',weight:'250 г'},
+{id:'tea-forest',name:'Чай травяной «Лесной»',cat:'Чай',desc:'Душистый травяной сбор для спокойных вечеров. 50 г.',price:320,img:'assets/products/tea-forest.jpg',tag:'Новинка',weight:'50 г'},
+{id:'tea-berry',name:'Чай «Ягодный вечер»',cat:'Чай',desc:'Ягодно-травяная композиция с ярким ароматом. 70 г.',price:390,img:'assets/products/tea-berry.jpg',tag:'',weight:'70 г'},
+{id:'candle-wax',name:'Свеча из вощины',cat:'Свечи',desc:'Свеча из натуральной вощины с медовым ароматом.',price:450,img:'assets/products/candle-wax.jpg',tag:'Ручная работа',weight:'1 шт.'},
+{id:'propolis',name:'Прополис натуральный',cat:'Прополис',desc:'Продукт пчеловодства. Подробности состава и применения уточняйте у продавца.',price:280,img:'assets/products/propolis.jpg',tag:'',weight:'10 г'},
+{id:'gift-cozy',name:'Набор «Уют»',cat:'Подарки',desc:'Мёд, чай и свеча в подарочной упаковке.',price:1290,img:'assets/products/gift-cozy.jpg',tag:'Для подарка',weight:'1 набор'}
 ];
 function money(n){return new Intl.NumberFormat('ru-RU').format(n)+' ₽'}
 function readStore(k,d){try{return JSON.parse(localStorage.getItem(k))||d}catch(e){return d}}
